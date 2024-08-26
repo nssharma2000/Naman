@@ -21,7 +21,7 @@ html
   color: white;
   width: 98%;
   margin: auto;
-  height: 150px;
+  height: 15vw;
 }
 .TOP_M
 {
@@ -163,18 +163,17 @@ H1
 .Q_BOX
 {
   width: 55vw;
-  height: 30vw;
+  height: calc(55vw * 0.6 + 180px);
   margin: auto;
   border: 3px solid transparent;
   border-radius: 18px;
-  background: linear-gradient(#FF7F00, #FFD18C);
-  box-shadow:
+  background: linear-gradient(#FF7F00, #FFD18C);  
 }
 
 .Q
 {
-  width: 52vw;
-  height: 4.5vw;
+  width: 90%;
+  height: 18%;
   margin: auto;
 }
 
@@ -187,22 +186,29 @@ H1
 
 .ANSWER
 {
-  width: 34vw;
-  height: 1.7vw;
+  width: 75%;
+  height: 10%;
   margin: auto;
   border: 3px solid transparent;
   border-radius: 10px;
   background-color: #8700A3;
   color: white;
-  font-size: 1.7vw;
+  font-size: 2vw;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 1.8%;
   font-weight: 600;
+  display: flex;
+  align-items: center;
   font-family: Arial;
   transition-duration: 1.5s;
   box-shadow: 1.3px 1.3px 0px 1.3px black;
+}
 
+.A_TEXT 
+{
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .ANSWER:HOVER
@@ -214,13 +220,12 @@ H1
 .A_BOX
 {
   width: 48vw;
-  height: 18vw;
+  height: 53%;
   background: url("A_Box Pattern.jpg") 130% 100%;
-  padding-top: 1vw;
+  padding-top: 1%;
   margin: auto;
   border: 1px solid transparent;
   border-radius: 8px;
-
 }
 
 .QR
@@ -232,7 +237,7 @@ H1
   padding-top: 1%;
   padding-right: 3%;
   display: none;
-  height: 5vw;
+  height: 10%;
   color: white;
   margin: auto;
   font-family: Arial;
@@ -244,8 +249,9 @@ H1
 {
   background: linear-gradient(#FF0800, #FF726D);
   margin: auto;
-  width: 15vw;
+  width: 20vw;
   height: 4vw;
+  cursor: pointer;
   border-radius: 10px;
   font-family: Arial;
   text-align: center;
@@ -267,7 +273,7 @@ margin: 5% auto auto auto;
 .RESULT
 {
   width: 40vw;
-  height: 10vw;
+  height: 20vw;
   display: none;
   margin: auto;
   background: linear-gradient(#FFFF00, #FFFF99);
@@ -304,7 +310,7 @@ margin: 5% auto auto auto;
 }
 
 
-@media only screen and (max-width: 900px)
+/*@media only screen and (max-width: 900px)
 {
   .TOP_M
   {
@@ -334,17 +340,13 @@ margin: 5% auto auto auto;
   {
     height: 33%;
   }
-  .A_BOX
-  {
-    height: 33vw;
-  }
   .RESULT
   {
     height: 15vw;
   }
 
 }
-
+*/
 
 </STYLE>
 
@@ -384,19 +386,19 @@ margin: 5% auto auto auto;
     <BR>
     <DIV CLASS="A_BOX">
     <DIV CLASS="ANSWER" ONCLICK="a(this)">
-      A. Super Mario Bros.
+      <DIV CLASS="A_TEXT">A. Super Mario Bros.</DIV>
     </DIV>
     <BR>
     <DIV CLASS="ANSWER" ONCLICK="a(this)">
-      B. Super Mario Sunshine
+      <DIV CLASS="A_TEXT">B. Super Mario Sunshine</DIV>
     </DIV>
     <BR>
     <DIV CLASS="ANSWER" ONCLICK="a(this)">
-      C. Donkey Kong
+      <DIV CLASS="A_TEXT">C. Donkey Kong</DIV>
     </DIV>
     <BR>
     <DIV CLASS="ANSWER" ONCLICK="a(this)">
-      D. Mario Teaches Typing
+      <DIV CLASS="A_TEXT">D. Mario Teaches Typing</DIV>
     </DIV>
   </DIV>
   <BR>
@@ -417,19 +419,19 @@ margin: 5% auto auto auto;
       <BR>
       <DIV CLASS="A_BOX">
       <DIV CLASS="ANSWER" ONCLICK="a(this)">
-        A. Yoshi
+        <DIV CLASS="A_TEXT">A. Yoshi</DIV>
       </DIV>
       <BR>
       <DIV CLASS="ANSWER" ONCLICK="a(this)">
-        B. Wario
+        <DIV CLASS="A_TEXT">B. Wario</DIV>
       </DIV>
       <BR>
       <DIV CLASS="ANSWER" ONCLICK="a(this)">
-        C. Princess Peach
+        <DIV CLASS="A_TEXT">C. Princess Peach</DIV>
       </DIV>
       <BR>
       <DIV CLASS="ANSWER" ONCLICK="a(this)">
-        D. Bowser
+        <DIV CLASS="A_TEXT">D. Bowser</DIV>
       </DIV>
     </DIV>
     <BR>
@@ -450,19 +452,19 @@ margin: 5% auto auto auto;
         <BR>
         <DIV CLASS="A_BOX">
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          A. Sonic the Hedgehog
+          <DIV CLASS="A_TEXT">A. Sonic the Hedgehog</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          B. Sonic Unleashed
+          <DIV CLASS="A_TEXT">B. Sonic Unleashed</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          C. Sonic Rush
+          <DIV CLASS="A_TEXT">C. Sonic Rush</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          D. Sonic Generations
+          <DIV CLASS="A_TEXT">D. Sonic Generations</DIV>
         </DIV>
       </DIV>
       <BR>
@@ -483,19 +485,19 @@ margin: 5% auto auto auto;
         <BR>
         <DIV CLASS="A_BOX">
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          A. Wario
+          <DIV CLASS="A_TEXT">A. Wario</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          B. Waluigi
+          <DIV CLASS="A_TEXT">B. Waluigi</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          C. Bowser
+          <DIV CLASS="A_TEXT">C. Bowser</DIV>
         </DIV>
         <BR>
         <DIV CLASS="ANSWER" ONCLICK="a(this)">
-          D. Luigi
+          <DIV CLASS="A_TEXT">D. Luigi</DIV>
         </DIV>
       </DIV>
       <BR>
@@ -516,19 +518,19 @@ margin: 5% auto auto auto;
           <BR>
           <DIV CLASS="A_BOX">
           <DIV CLASS="ANSWER" ONCLICK="a(this)">
-            A. Sonic Riders: Zero Gravity
+            <DIV CLASS="A_TEXT">A. Sonic Riders: Zero Gravity</DIV>
           </DIV>
           <BR>
           <DIV CLASS="ANSWER" ONCLICK="a(this)">
-            B. Sonic Generations
+            <DIV CLASS="A_TEXT">B. Sonic Generations</DIV>
           </DIV>
           <BR>
           <DIV CLASS="ANSWER" ONCLICK="a(this)">
-            C. Sonic Unleashed
+            <DIV CLASS="A_TEXT">C. Sonic Unleashed</DIV>
           </DIV>
           <BR>
           <DIV CLASS="ANSWER" ONCLICK="a(this)">
-            D. Sonic the Hedgehog 3
+            <DIV CLASS="A_TEXT">D. Sonic the Hedgehog 3</DIV>
           </DIV>
         </DIV>
         <BR>
@@ -549,19 +551,19 @@ margin: 5% auto auto auto;
             <BR>
             <DIV CLASS="A_BOX">
             <DIV CLASS="ANSWER" ONCLICK="a(this)">
-              A. Mushroom
+              <DIV CLASS="A_TEXT">A. Mushroom</DIV>
             </DIV>
             <BR>
             <DIV CLASS="ANSWER" ONCLICK="a(this)">
-              B. Starman
+              <DIV CLASS="A_TEXT">B. Starman</DIV>
             </DIV>
             <BR>
             <DIV CLASS="ANSWER" ONCLICK="a(this)">
-              C. Fire Flower
+              <DIV CLASS="A_TEXT">C. Fire Flower</DIV>
             </DIV>
             <BR>
             <DIV CLASS="ANSWER" ONCLICK="a(this)">
-              D. Propeller Suit
+              <DIV CLASS="A_TEXT">D. Propeller Suit</DIV>
             </DIV>
           </DIV>
           <BR>
@@ -582,19 +584,19 @@ margin: 5% auto auto auto;
               <BR>
               <DIV CLASS="A_BOX">
               <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                A. Yoshi
+                <DIV CLASS="A_TEXT">A. Yoshi</DIV>
               </DIV>
               <BR>
               <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                B. Luigi
+                <DIV CLASS="A_TEXT">B. Luigi</DIV>
               </DIV>
               <BR>
               <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                C. Princess Peach
+                <DIV CLASS="A_TEXT">C. Princess Peach</DIV>
               </DIV>
               <BR>
               <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                D. Toad
+                <DIV CLASS="A_TEXT">D. Toad</DIV>
               </DIV>
             </DIV>
             <BR>
@@ -615,19 +617,19 @@ margin: 5% auto auto auto;
                 <BR>
                 <DIV CLASS="A_BOX">
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  A. Tails
+                  <DIV CLASS="A_TEXT">A. Tails</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  B. Amy
+                  <DIV CLASS="A_TEXT">B. Amy</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  C. Knuckles
+                  <DIV CLASS="A_TEXT">C. Knuckles</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  D. Dr. Eggman
+                  <DIV CLASS="A_TEXT">D. Dr. Eggman</DIV>
                 </DIV>
               </DIV>
               <BR>
@@ -648,19 +650,19 @@ margin: 5% auto auto auto;
                 <BR>
                 <DIV CLASS="A_BOX">
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  A. Amy
+                  <DIV CLASS="A_TEXT">A. Amy</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  B. Silver
+                  <DIV CLASS="A_TEXT">B. Silver</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  C. Tails
+                  <DIV CLASS="A_TEXT">C. Tails</DIV>
                 </DIV>
                 <BR>
                 <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                  D. Knuckles
+                  <DIV CLASS="A_TEXT">D. Knuckles</DIV>
                 </DIV>
               </DIV>
               <BR>
@@ -681,19 +683,19 @@ margin: 5% auto auto auto;
                   <BR>
                   <DIV CLASS="A_BOX">
                   <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                    A. Sonic Unleashed
+                    <DIV CLASS="A_TEXT">A. Sonic Unleashed</DIV>
                   </DIV>
                   <BR>
                   <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                    B. Sonic Free Riders
+                    <DIV CLASS="A_TEXT">B. Sonic Free Riders</DIV>
                   </DIV>
                   <BR>
                   <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                    C. Sonic the Hedgehog 2
+                    <DIV CLASS="A_TEXT">C. Sonic the Hedgehog 2</DIV>
                   </DIV>
                   <BR>
                   <DIV CLASS="ANSWER" ONCLICK="a(this)">
-                    D. Sonic the Hedgehog
+                    <DIV CLASS="A_TEXT">D. Sonic the Hedgehog</DIV>
                   </DIV>
                 </DIV>
                 <BR>
@@ -789,13 +791,7 @@ margin: 5% auto auto auto;
          answer_s(qr, i)
          const qb=document.getElementsByClassName("Q_BOX")
          console.log(qb)
-         if(window.innerWidth<900)
-         {
-           qb[i].style.height="40%"
-         }
-         else {
-           qb[i].style.height="38vw"
-         }
+         qb[i].style.paddingBottom="calc(0.12 * (55vw * 0.6 + 180px))"
          }
          else
          {
@@ -808,13 +804,7 @@ margin: 5% auto auto auto;
           answer_s(qr, i)
           const qb=document.getElementsByClassName("Q_BOX")
           console.log(qb)
-          if(window.innerWidth<900)
-          {
-            qb[i].style.height="40%"
-          }
-          else {
-            qb[i].style.height="38vw"
-          }
+            qb[i].style.paddingBottom="calc(0.12 * (55vw * 0.6 + 180px))"
          }
       }
     }
